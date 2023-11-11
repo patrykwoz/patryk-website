@@ -1,0 +1,115 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensure padding and borders are included in the element's total width and height */
+}
+
+body {
+    font-family: 'DM Mono', 'Inter', sans-serif; /* Fallback in case 'Inter' isn't available */
+    background-color: #ffffff;
+    /* overflow: hidden; */
+    overflow-x: hidden;
+    position: relative;
+    min-height: 600px;
+    height: 100vh;
+}
+
+canvas {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
+
+/* Typography */
+h1 {
+    position: absolute;
+    z-index: 99;
+    background-color: rgba(255, 255, 255, 0); /* This is fully transparent. Consider removing or adjusting */
+}
+
+p {
+    color: #00FFBB;
+    font-size: 12px;
+    font-weight: 300;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: break-word;
+    text-justify:center;
+}
+
+/* Logo and Image */
+div.logo {
+    width: 330px;
+    height: 450px;
+    position: absolute;
+    top: calc(50vh - 225px);
+    left: calc(50vw - 165px);
+
+    z-index: 0;
+    background-color: #0D27B2;
+    border: 2px solid #0D27B2;
+    border-radius: 2.5rem;
+    /* box-shadow: 0 0 5px #00FFBB, 0 0 10px #00FFBB; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 14px 0px 24px;
+}
+
+@media (max-height: 700px) {
+    div.logo {
+      top: 69px;
+      height:350px;
+    }
+}
+
+@media (max-height: 450px) {
+    div.logo {
+      top: 51px;
+      height:210px;
+    }
+}
+
+.logo img {
+    width: 100%;
+    z-index: 9; /* Consider if this z-index is necessary, as the image is inside the .logo div */
+}
+
+/* Adjustments for paragraphs inside the logo div */
+div.banner {
+    padding-top: 27px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.canvas-container{
+    background-color: transparent;
+    width: 100vw;
+    height: 100%;
+    z-index: 2;
+}
+
+.hero-container{
+    height: 100vh;
+    background-color: rgba(0, 255, 255, 0.164);
+    z-index: 1;
+    position: relative;
+}
+
+.nav-bar{
+    background-color: transparent;
+    position: absolute;
+}
+
+.project-container{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
