@@ -188,9 +188,6 @@ canvas{
     font-size: 70px;
     z-index: 99;
 
-}
-
-.project-card-hover:hover{
     cursor: pointer;
     color: magenta;
 
