@@ -76,3 +76,17 @@ function insertHtml(container, html) {
     container.innerHTML = '';
     container.innerHTML = html;
 }
+
+function handleQueryParameters() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const contentParam = urlParams.get('content');
+
+    if (contentParam === 'adaptive-artifacts') {
+        const heroObjects = templatesManager[`${contentParam}-hero`];
+        const contentObjects = templatesManager[`${contentParam}-content`];
+        heroContainer.innerHTML = '';
+        contentContainer.innerHTML = '';
+        appendDomObjects(heroContainer, heroObjects);
+        appendDomObjects(contentContainer, contentObjects);  
+    }
+}

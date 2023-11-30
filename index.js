@@ -35,10 +35,12 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
 
-
     contentContainer.addEventListener('mousemove', handleMouseMove);
     appendDomObjects(heroContainer, homeHeroObjects);
     appendDomObjects(contentContainer, homeContentObjects);
+
+    handleQueryParameters();
+
 
 
 
