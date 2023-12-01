@@ -32,7 +32,33 @@ Highlighted Projects
 const projectsContainer = document.createElement('div');
 projectsContainer.classList.add('project-container');
 
-//Ideas Tracker (Capstone One)
+//Ideas Tracker (Capstone One) IdeaLog
+const ideaLog = document.createElement('div');
+ideaLog.classList.add('project-card');
+ideaLog.setAttribute('data-project-link', 'templates/compEnvDesign.js');
+ideaLog.innerHTML = `
+<div class="project-card-header">
+    <p class="project-card-header-timeline">2023</p>
+    <p class="project-card-header-type">Software Engineering</p>
+</div>
+<p class="project-title">IDEALog (WIP)</p>
+<div class="project-image">
+    <img src="assets/idealog/idealog.png" alt=""> 
+</div>
+`;
+ideaLog.addEventListener('mouseenter', handleMouseEnter);
+ideaLog.addEventListener('mouseleave', handleMouseLeave);
+ideaLog.addEventListener('click', function(e){
+    const projectCard = e.target;
+    if (projectCard) {
+        window.location.href = 'https://github.com/patrykwoz/idealog';
+
+        // const contentParam = 'bim';
+        // appendTemplateObjects(contentParam); 
+    }
+});
+
+projectsContainer.appendChild(ideaLog);
 
 //Small design app (Capstone Two)
 
@@ -42,7 +68,7 @@ adaptiveArtifacts.classList.add('project-card');
 adaptiveArtifacts.setAttribute('data-project-link', 'templates/adaptiveArtifacts.js');
 adaptiveArtifacts.innerHTML = `
 <div class="project-card-header">
-    <p class="project-card-header-timeline">2012</p>
+    <p class="project-card-header-timeline">2022-Present</p>
     <p class="project-card-header-type">Applied Research</p>
 </div>
 <p class="project-title">Adaptive Artifacts</p>
@@ -68,7 +94,7 @@ mediaHouse.classList.add('project-card');
 mediaHouse.setAttribute('data-project-link', 'templates/compEnvDesign.js');
 mediaHouse.innerHTML = `
 <div class="project-card-header">
-    <p class="project-card-header-timeline">2012</p>
+    <p class="project-card-header-timeline">2013</p>
     <p class="project-card-header-type">Architectural Design</p>
 </div>
 <p class="project-title">Media House</p>
@@ -94,7 +120,7 @@ digitalFabrication.classList.add('project-card');
 digitalFabrication.setAttribute('data-project-link', 'templates/compEnvDesign.js');
 digitalFabrication.innerHTML = `
 <div class="project-card-header">
-    <p class="project-card-header-timeline">2012</p>
+    <p class="project-card-header-timeline">2014</p>
     <p class="project-card-header-type">Design for Manufacturing</p>
 </div>
 <p class="project-title">Digital Fabrication</p>
@@ -107,7 +133,7 @@ digitalFabrication.addEventListener('mouseleave', handleMouseLeave);
 digitalFabrication.addEventListener('click', function(e){
     const projectCard = e.target;
     if (projectCard) {
-        const contentParam = 'media-house';
+        const contentParam = 'digital-fabrication';
         appendTemplateObjects(contentParam); 
     }
 });
@@ -121,8 +147,8 @@ beautifullyGrotesque.classList.add('project-card');
 beautifullyGrotesque.setAttribute('data-project-link', 'templates/compEnvDesign.js');
 beautifullyGrotesque.innerHTML = `
 <div class="project-card-header">
-    <p class="project-card-header-timeline">2012</p>
-    <p class="project-card-header-type">Computational Geometry</p>
+    <p class="project-card-header-timeline">2015</p>
+    <p class="project-card-header-type">Computational Geometry and Perception of Beauty</p>
 </div>
 <p class="project-title">Beautifully Grotesque</p>
 <div class="project-image">
@@ -134,7 +160,7 @@ beautifullyGrotesque.addEventListener('mouseleave', handleMouseLeave);
 beautifullyGrotesque.addEventListener('click', function(e){
     const projectCard = e.target;
     if (projectCard) {
-        const contentParam = 'media-house';
+        const contentParam = 'beautifully-grotesque';
         appendTemplateObjects(contentParam); 
     }
 });
@@ -148,7 +174,7 @@ evolvingConfigurations.classList.add('project-card');
 evolvingConfigurations.setAttribute('data-project-link', 'templates/compEnvDesign.js');
 evolvingConfigurations.innerHTML = `
 <div class="project-card-header">
-    <p class="project-card-header-timeline">2012</p>
+    <p class="project-card-header-timeline">2019</p>
     <p class="project-card-header-type">Master Thesis</p>
 </div>
 <p class="project-title">Evolving Configurations</p>
@@ -161,7 +187,7 @@ evolvingConfigurations.addEventListener('mouseleave', handleMouseLeave);
 evolvingConfigurations.addEventListener('click', function(e){
     const projectCard = e.target;
     if (projectCard) {
-        const contentParam = 'media-house';
+        const contentParam = 'evolving-configurations';
         appendTemplateObjects(contentParam); 
     }
 });
@@ -187,7 +213,7 @@ bim.addEventListener('mouseleave', handleMouseLeave);
 bim.addEventListener('click', function(e){
     const projectCard = e.target;
     if (projectCard) {
-        const contentParam = 'media-house';
+        const contentParam = 'bim';
         appendTemplateObjects(contentParam); 
     }
 });
@@ -195,6 +221,32 @@ bim.addEventListener('click', function(e){
 projectsContainer.appendChild(bim);
 
 //All the way down
+const allTheWayDown = document.createElement('div');
+allTheWayDown.classList.add('project-card');
+allTheWayDown.setAttribute('data-project-link', 'templates/compEnvDesign.js');
+allTheWayDown.innerHTML = `
+<div class="project-card-header">
+    <p class="project-card-header-timeline">2023</p>
+    <p class="project-card-header-type">Software Engineering</p>
+</div>
+<p class="project-title">AllTheWayDown</p>
+<div class="project-image">
+    <img src="assets/all_the_way_down/allTheWayDownFlat.png" alt=""> 
+</div>
+`;
+allTheWayDown.addEventListener('mouseenter', handleMouseEnter);
+allTheWayDown.addEventListener('mouseleave', handleMouseLeave);
+allTheWayDown.addEventListener('click', function(e){
+    const projectCard = e.target;
+    if (projectCard) {
+        window.location.href = 'https://github.com/maxdumas/aectech-hackathon';
+
+        // const contentParam = 'bim';
+        // appendTemplateObjects(contentParam); 
+    }
+});
+
+projectsContainer.appendChild(allTheWayDown);
 
 //GHCHOMP
 

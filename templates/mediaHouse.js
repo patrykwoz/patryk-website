@@ -83,9 +83,54 @@ different spaces.
 </ul>
 
 <div class="project-content-img">
+    <img src="assets/media_house/pierwszaStronaDuze02powt250.jpg" alt=""></img>
+    <p class="project-content-caption">
+    Architectural Rendering.
+    </p>
+</div>
+
+
+<div class="project-content-img">
     <img src="assets/media_house/mebelkiFINALzm.jpg" alt=""></img>
     <p class="project-content-caption">
     Arrangement of openings, rooms and furniture supported through variable transparencies results in a high number of possible interaction patterns between users and the building
+    </p>
+</div>
+
+<div class="project-content-img">
+    <img src="assets/media_house/entire_house_hiddenliines.jpg" alt=""></img>
+    <p class="project-content-caption">
+    Proposed type is a complex topological entity inviting people to explore and play with it.
+    </p>
+</div>
+
+
+<div class="project-content-img">
+    <div class="image-group-two-row">
+        <img src="assets/media_house/slabs_hidden_liness.jpg" alt=""></img>
+        <img src="assets/media_house/slabs_interior.jpg" alt=""></img>
+    </div>
+    <p class="project-content-caption">
+    Slabs connecting stripes and hosting
+    <span style="font-weight:600;">librarian offices</span>,
+    <span style="font-weight:600; color:grey;">servers</span>,
+    <span style="font-weight:600; color:darkgrey">service areas</span>.
+    </p>
+</div>
+
+<div class="project-content-img">
+    <div class="image-group-three-stacked">
+        <img src="assets/media_house/exploded_color_2.jpg" alt=""></img>
+        <img src="assets/media_house/exploded_color_1.jpg" alt=""></img>
+        <img src="assets/media_house/exploded_color_0.jpg" alt=""></img>
+    </div>
+    <p class="project-content-caption">
+    Activities grouped in stripes:
+    <span style="font-weight:600;">sports</span>,
+    <span style="font-weight:600; color:grey;">education</span>,
+    <span style="font-weight:600; color:grey;">libraries</span>,
+    <span style="font-weight:600; color:grey;">attractors</span>,
+    <span style="font-weight:600; color:darkgrey">exhibitions</span>.
     </p>
 </div>
 

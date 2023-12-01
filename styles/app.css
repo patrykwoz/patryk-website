@@ -315,13 +315,19 @@ img.hero-img-background{
     font-size: 20px;
     padding-bottom: 15px;
 }
-.project-content ul{
+.project-content ul,ol{
     font-family: 'DM Sans', 'DM Mono', sans-serif;
     font-weight: 400;
     padding-left: 15px;
     padding-top: 10px;
     padding-bottom: 50px;
     list-style: none;
+}
+
+ol{
+    padding-top: 0px;
+    list-style: decimal;
+    font-size: 20px;
 }
 
 div.project-content-img{
@@ -370,6 +376,27 @@ div.project-content-img{
     object-fit: cover;
     width: 100%;
     height: auto;
+}
+
+.image-group-two-row{
+    width: 100%;
+    max-width: 1020px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 10px;
+}
+
+.image-group-two-row img{
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+h3.paragraph-title{
+    font-weight: 500;
+    padding-left: 0;
+    padding-bottom: 10px;
 }
 
 p.project-content-caption{

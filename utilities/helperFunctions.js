@@ -93,6 +93,10 @@ function appendTemplateObjects(contentParam){
         heroContainer.innerHTML = '';
         contentContainer.innerHTML = '';
         appendDomObjects(heroContainer, heroObjects);
-        appendDomObjects(contentContainer, contentObjects); 
+        appendDomObjects(contentContainer, contentObjects);
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
     }
 }
