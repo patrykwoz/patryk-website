@@ -73,7 +73,7 @@ adaptiveArtifacts.innerHTML = `
 </div>
 <p class="project-title">Adaptive Artifacts</p>
 <div class="project-image">
-    <img src="assets/adaptive_artifacts/IMG_4909_cropped.jpg" alt=""> 
+    <img src="assets/adaptive_artifacts/Screenshot 2021-05-03 170628.jpg" alt=""> 
 </div>
 `;
 adaptiveArtifacts.addEventListener('mouseenter', handleMouseEnter);
@@ -231,7 +231,7 @@ allTheWayDown.innerHTML = `
 </div>
 <p class="project-title">AllTheWayDown</p>
 <div class="project-image">
-    <img src="assets/all_the_way_down/allTheWayDownFlat.png" alt=""> 
+    <img src="assets/all_the_way_down/rhinoFlat.png" alt=""> 
 </div>
 `;
 allTheWayDown.addEventListener('mouseenter', handleMouseEnter);
