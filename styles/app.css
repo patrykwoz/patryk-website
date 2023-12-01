@@ -119,6 +119,17 @@ canvas{
     z-index: -1;
 }
 
+img.hero-img-background{
+    position: absolute;
+    object-fit:cover;
+    width: 100%;
+    height: 100%;
+    opacity: 50%;
+    z-index: -1;
+
+}
+
+
 .content-container{
     z-index: 9;
 }
@@ -146,7 +157,7 @@ canvas{
     padding: 0px;
     padding-left: 0px;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     color: cyan;
 
     display:flex;
@@ -318,7 +329,8 @@ div.project-content-img{
 }
 
 .project-content-img img{
-    width: 650px;
+    width: 100%;
+    max-width: 1020px;
     height: auto;
 }
 
@@ -330,6 +342,31 @@ div.project-content-img{
 }
 
 .image-group-four img{
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+.image-text-group-four{
+    width: 100%;
+    max-width: 1020px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.image-text-group-four>div{
+    width: 100%;
+    height: auto;
+
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 15px; */
+}
+
+.image-text-group-four div>img{
     object-fit: cover;
     width: 100%;
     height: auto;

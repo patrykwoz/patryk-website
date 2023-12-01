@@ -80,13 +80,19 @@ function insertHtml(container, html) {
 function handleQueryParameters() {
     const urlParams = new URLSearchParams(window.location.search);
     const contentParam = urlParams.get('content');
+    if (contentParam) {
+        appendTemplateObjects(contentParam);        
+    }
+}
 
-    if (contentParam === 'adaptive-artifacts') {
+function appendTemplateObjects(contentParam){
+    const templateNames = Object.keys(templatesManager);
+    if (templateNames.includes(`${contentParam}-hero`)) {
         const heroObjects = templatesManager[`${contentParam}-hero`];
         const contentObjects = templatesManager[`${contentParam}-content`];
         heroContainer.innerHTML = '';
         contentContainer.innerHTML = '';
         appendDomObjects(heroContainer, heroObjects);
-        appendDomObjects(contentContainer, contentObjects);  
+        appendDomObjects(contentContainer, contentObjects); 
     }
 }
