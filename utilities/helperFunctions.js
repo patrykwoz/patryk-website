@@ -4,7 +4,7 @@ function handleMouseEnter(e) {
     if (projectCard) {
         const myElement = projectCard.querySelector('.project-image');
 
-        if (myElement) {
+        if (myElement && window.innerWidth > 650) {
             myElement.style.display = 'block';
         }
     }
@@ -16,7 +16,7 @@ function handleMouseLeave(e) {
     if (projectCard) {
         const myElement = projectCard.querySelector('.project-image');
 
-        if (myElement) {
+        if (myElement && window.innerWidth > 650) {
             myElement.style.display = 'none';
         }
     }

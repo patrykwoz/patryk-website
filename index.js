@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function handleScroll() {
         const scrollPositionVh = (window.scrollY / window.innerHeight) * 100;
         navBar.style.transform = scrollPositionVh >= 30 ? 'translateY(-100%)' : 'translateY(0)';
-        navArrow.style.transform = scrollPositionVh >= 30 ? 'translateY(-120%)' : 'translateY(0)';
+        navArrow.style.transform = scrollPositionVh >= 30 ? 'translateY(-135%)' : 'translateY(0)';
     }
 
     function handleProjectLinkClick(event) {
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (projectCard) {
             const myElement = projectCard.querySelector('.project-image');
 
-            if (myElement) {
+            if (myElement && window.innerWidth > 650) {
                 const rect = projectCard.getBoundingClientRect();
                 const x = e.clientX - rect.left;
                 const y = e.clientY - rect.top;
