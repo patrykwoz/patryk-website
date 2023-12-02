@@ -46,6 +46,10 @@ document.addEventListener('DOMContentLoaded', function () {
             setElementHeightToWindoInnerHeight(heroContainer);
         };
     });
+
+    if (window.innerHeight < 850){
+        setElementHeightToWindoInnerHeight(heroContainer);
+    };
     
 
 
