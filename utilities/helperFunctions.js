@@ -81,11 +81,11 @@ function handleQueryParameters() {
     const urlParams = new URLSearchParams(window.location.search);
     const contentParam = urlParams.get('content');
     if (contentParam) {
-        appendTemplateObjects(contentParam);        
+        appendTemplateObjects(contentParam);
     }
 }
 
-function appendTemplateObjects(contentParam){
+function appendTemplateObjects(contentParam) {
     const templateNames = Object.keys(templatesManager);
     if (templateNames.includes(`${contentParam}-hero`)) {
         const heroObjects = templatesManager[`${contentParam}-hero`];
@@ -99,4 +99,9 @@ function appendTemplateObjects(contentParam){
             behavior: 'smooth'
         });
     }
+}
+
+function setElementHeightToWindoInnerHeight(element) {
+    const windowHeight = window.innerHeight;
+    element.style.height = windowHeight + 'px';
 }

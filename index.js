@@ -41,6 +41,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     handleQueryParameters();
 
+    window.addEventListener('resize', function(e){
+        if (window.innerHeight < 850){
+            setElementHeightToWindoInnerHeight(heroContainer);
+        };
+    });
+    
+
 
 
 

@@ -553,8 +553,3 @@ p.project-content-caption span{
 
 }
 
-@media (max-height:850px){
-    div.hero-container{
-        height:95vh;
-    }
-}
