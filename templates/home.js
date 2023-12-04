@@ -82,7 +82,8 @@ adaptiveArtifacts.addEventListener('click', function(e){
     const projectCard = e.target;
     if (projectCard) {
         const contentParam = 'adaptive-artifacts';
-        appendTemplateObjects(contentParam); 
+        // appendTemplateObjects(contentParam);
+        window.location.href = `https://patrykwozniczka.com/?content=${contentParam}`;
     }
 });
 
@@ -108,7 +109,8 @@ mediaHouse.addEventListener('click', function(e){
     const projectCard = e.target;
     if (projectCard) {
         const contentParam = 'media-house';
-        appendTemplateObjects(contentParam); 
+        // appendTemplateObjects(contentParam); 
+        window.location.href = `https://patrykwozniczka.com/?content=${contentParam}`;
     }
 });
 
@@ -134,7 +136,8 @@ digitalFabrication.addEventListener('click', function(e){
     const projectCard = e.target;
     if (projectCard) {
         const contentParam = 'digital-fabrication';
-        appendTemplateObjects(contentParam); 
+        // appendTemplateObjects(contentParam);
+        window.location.href = `https://patrykwozniczka.com/?content=${contentParam}`; 
     }
 });
 
@@ -161,7 +164,8 @@ beautifullyGrotesque.addEventListener('click', function(e){
     const projectCard = e.target;
     if (projectCard) {
         const contentParam = 'beautifully-grotesque';
-        appendTemplateObjects(contentParam); 
+        // appendTemplateObjects(contentParam); 
+        window.location.href = `https://patrykwozniczka.com/?content=${contentParam}`;
     }
 });
 
@@ -188,7 +192,8 @@ evolvingConfigurations.addEventListener('click', function(e){
     const projectCard = e.target;
     if (projectCard) {
         const contentParam = 'evolving-configurations';
-        appendTemplateObjects(contentParam); 
+        // appendTemplateObjects(contentParam); 
+        window.location.href = `https://patrykwozniczka.com/?content=${contentParam}`;
     }
 });
 
@@ -214,7 +219,8 @@ bim.addEventListener('click', function(e){
     const projectCard = e.target;
     if (projectCard) {
         const contentParam = 'bim';
-        appendTemplateObjects(contentParam); 
+        // appendTemplateObjects(contentParam); 
+        window.location.href = `https://patrykwozniczka.com/?content=${contentParam}`;
     }
 });
 
@@ -285,7 +291,8 @@ computationalEnvironmentalDesign.addEventListener('click', function(e){
     const projectCard = e.target;
     if (projectCard) {
         const contentParam = 'comp-env-design';
-        appendTemplateObjects(contentParam); 
+        // appendTemplateObjects(contentParam); 
+        window.location.href = `https://patrykwozniczka.com/?content=${contentParam}`;
     }
 });
 

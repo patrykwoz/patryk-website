@@ -89,6 +89,7 @@ div.hero-container{
     background-color: rgba(0, 255, 255, 0.164);
     z-index: 1;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 
