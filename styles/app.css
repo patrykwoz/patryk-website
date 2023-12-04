@@ -32,6 +32,18 @@ span.span-highlight{
     font-weight: 500;
 }
 
+a{
+    color: #0D27B2;
+}
+
+a:hover{
+    color: magenta;
+}
+
+a:visited{
+    color: #0D27B2;
+}
+
 .nav-bar{
     position: fixed;
 
@@ -301,12 +313,12 @@ img.hero-img-background{
     text-decoration: none;
 }
 
-.project-content-header a:visited{
-    color: #0D27B2;
-}
-
 .project-content-header a:hover{
     color: magenta;
+}
+
+.project-content-header a:visited{
+    color: #0D27B2;
 }
 
 .project-content h3{
