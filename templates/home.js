@@ -37,7 +37,7 @@ shortStatement.innerHTML = `
             </p>
             <p class="iam">
 
-                Passionate about integrating living systems and buildings, I am a computational designer and software developer with more than seven years in the architecture, engineering, and construction industry. My focus is in developing computer programs that optimize the design, manufacturing, and assembly of user-centric built environments.
+                Passionate about integrating living systems and buildings, I am a computational designer and software developer with more than seven years of experience in the architecture, engineering, and construction industry. My focus is in developing computer programs that optimize the design, manufacturing, and assembly of user-centric built environments.
             </p>    
             <p class="iam">
                 As a software engineer, I’m capable of crafting these solutions into full-stack web applications.
@@ -104,13 +104,14 @@ ideaLog.innerHTML = `
     <img src="assets/idealog/idealog.png" alt=""> 
 </div>
 `;
+
 ideaLog.addEventListener('click', function(e){
     const projectCard = e.target;
     if (projectCard) {
         window.location.href = 'https://github.com/patrykwoz/idealog';
 
-        // const contentParam = 'bim';
-        // appendTemplateObjects(contentParam); 
+        // const contentParam = 'idealog';
+        // window.location.href = `https://patrykwozniczka.com/?content=${contentParam}`;
     }
 });
 
@@ -138,8 +139,8 @@ adaptiveArtifacts.addEventListener('click', function(e){
     const projectCard = e.target;
     if (projectCard) {
         const contentParam = 'adaptive-artifacts';
-        appendTemplateObjects(contentParam);
-        // window.location.href = `https://patrykwozniczka.com/?content=${contentParam}`;
+        // appendTemplateObjects(contentParam);
+        window.location.href = `https://patrykwozniczka.com/?content=${contentParam}`;
     }
 });
 

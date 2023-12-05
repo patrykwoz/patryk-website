@@ -1,28 +1,5 @@
-function handleMouseEnter(e) {
-    const projectCard = e.target;
-
-    if (projectCard) {
-        const myElement = projectCard.querySelector('.project-image');
-
-        if (myElement && window.innerWidth > 650) {
-            myElement.style.display = 'block';
-        }
-    }
-}
-
-function handleMouseLeave(e) {
-    const projectCard = e.target;
-
-    if (projectCard) {
-        const myElement = projectCard.querySelector('.project-image');
-
-        if (myElement && window.innerWidth > 650) {
-            myElement.style.display = 'none';
-        }
-    }
-}
-
 function appendDomObjects(container, objects) {
+    container.innerHTML = '';
     for (let object of objects) {
         if (object instanceof HTMLElement) {
             container.appendChild(object);

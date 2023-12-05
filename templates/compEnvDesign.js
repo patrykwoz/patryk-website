@@ -4,8 +4,16 @@ const compEnvDesignHeroHeading = document.createElement('div')
 compEnvDesignHeroHeading.classList.add('hero-heading-container');
 compEnvDesignHeroHeading.innerHTML = `
     <p class="hero-heading">Computational Environmental Design</p>
+    
+`;
+
+const compEnvDesignHeroImgBackground = document.createElement('div')
+compEnvDesignHeroImgBackground.classList.add('hero-image-background')
+compEnvDesignHeroImgBackground.innerHTML = `
     <img class="hero-img-background" src="assets/comp_env_design/combination0042impactOnTheSite-original.jpg"></img>
 `;
+
+
 
 const compEnvDesignHeroCanvas = document.createElement('div')
 compEnvDesignHeroCanvas.classList.add('canvas-container')
@@ -199,7 +207,7 @@ with high harmful radiation values, we proposed optimized shading elements.
 compEnvDesignProjectContentContainer.appendChild(compEnvDesignProjectHeader);
 compEnvDesignProjectContentContainer.appendChild(compEnvDesignProjectContent);
 
-const compEnvDesignHeroObjects = [compEnvDesignHeroHeading, compEnvDesignHeroCanvas];
+const compEnvDesignHeroObjects = [compEnvDesignHeroHeading, compEnvDesignHeroImgBackground, compEnvDesignHeroCanvas];
 const compEnvDesignContentObjects = [compEnvDesignProjectContentContainer];
 
 templatesManager['comp-env-design-hero'] = compEnvDesignHeroObjects;
