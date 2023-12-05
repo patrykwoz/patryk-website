@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    
+
 
 
 
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 myElement.style.left = x + 'px';
                 myElement.style.top = y + 'px';
-                
+
             }
         }
     }
@@ -41,31 +41,41 @@ document.addEventListener('DOMContentLoaded', function () {
 
     handleQueryParameters();
 
-    window.addEventListener('resize', function(e){
-        if (window.innerHeight < 850){
-            setElementHeightToWindoInnerHeight(heroContainer);
-        };
-    });
+    // window.addEventListener('resize', function(e){
+    //     if (window.innerHeight < 850){
+    //         setElementHeightToWindoInnerHeight(heroContainer);
+    //     };
+    // });
 
-    if (window.innerHeight < 850){
-        setElementHeightToWindoInnerHeight(heroContainer);
-    };
-    
-
+    // if (window.innerHeight < 850){
+    //     setElementHeightToWindoInnerHeight(heroContainer);
+    // };
 
 
 
 
 
-
-    // insertHtml(heroContainer, heroHome);
-    // insertHtml(contentContainer, contentHome);
 
 
     contentContainer.addEventListener('click', handleProjectLinkClick);
 
     window.addEventListener('scroll', handleScroll);
 
+    document.querySelector('a[id="btn-about"]').addEventListener('click', function (e) {
+        e.preventDefault();
+        contentContainer.scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+
+    document.querySelector('a[id="btn-projects"]').addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetElement = document.querySelector('.project-container');
+        console.log(targetElement);
+        targetElement.scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
 
     document.querySelector('a[href="#nav-top"]').addEventListener('click', function (e) {
         e.preventDefault(); // Prevent the default anchor behavior
