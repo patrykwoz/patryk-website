@@ -49,9 +49,9 @@ shortStatement.innerHTML = `
                 What I bring to the table:
             </p>
             <ul>
-                <li>A bridge between computer science and the design of built environments.</li>
-                <li>Years of experience delivering innovative design technology.</li>
-                <li>Expertise in computational geometry.</li>
+                <li><i class="fa-regular fa-circle bullet"></i>A bridge between computer science and the design of built environments.</li>
+                <li><i class="fa-regular fa-circle bullet"></i>Years of experience delivering innovative design technology.</li>
+                <li><i class="fa-regular fa-circle bullet"></i>Expertise in computational geometry.</li>
             </ul>
 
             <p class="iam">
@@ -63,10 +63,10 @@ shortStatement.innerHTML = `
             </p>
 
             <ul>
-                <li>Save time.</li>
-                <li>Design better.</li>
-                <li>Use Machine Learning for new ideas.</li>
-                <li>Find creative solutions using computation.</li>
+                <li><i class="fa-regular fa-circle bullet"></i>Save time.</li>
+                <li><i class="fa-regular fa-circle bullet"></i>Design better.</li>
+                <li><i class="fa-regular fa-circle bullet"></i>Use Machine Learning for new ideas.</li>
+                <li><i class="fa-regular fa-circle bullet"></i>Find creative solutions using computation.</li>
             
             </ul?
             

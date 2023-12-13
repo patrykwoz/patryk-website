@@ -45,21 +45,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     handleQueryParameters();
 
-    // window.addEventListener('resize', function(e){
-    //     if (window.innerHeight < 850){
-    //         setElementHeightToWindoInnerHeight(heroContainer);
-    //     };
-    // });
-
-    // if (window.innerHeight < 850){
-    //     setElementHeightToWindoInnerHeight(heroContainer);
-    // };
-
-
-
-
-
-
 
     contentContainer.addEventListener('click', handleProjectLinkClick);
 

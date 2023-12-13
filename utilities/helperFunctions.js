@@ -62,6 +62,7 @@ function handleQueryParameters() {
     }
 }
 
+
 function appendTemplateObjects(contentParam) {
     const templateNames = Object.keys(templatesManager);
     if (templateNames.includes(`${contentParam}-hero`)) {
@@ -75,6 +76,13 @@ function appendTemplateObjects(contentParam) {
             top: 0,
             behavior: 'smooth'
         });
+    } else if (templateNames.includes(`${contentParam}-reference`)){
+        const referenceObjects = templatesManager[`${contentParam}-reference`];
+        heroContainer.innerHTML = '';
+        contentContainer.innerHTML = '';
+        navBar.innerHTML = '';
+        appendDomObjects(heroContainer,referenceObjects );
+
     }
 }
 
