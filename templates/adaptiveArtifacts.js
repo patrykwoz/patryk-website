@@ -24,7 +24,7 @@ adaptiveArtifactsProjectHeader.innerHTML=`
 <p>|</p>
 <a href="https://github.com/Adaptive-Artifacts">GitHub</a>
 <p>|</p>
-<a href="/?content=adaptive-artifacts-unpublished-paper">Unpublished Paper</a>
+<a href="https://github.com/patrykwoz/patryk-website/blob/main/assets/adaptive_artifacts/Adaptive%20Artifacts%20-%20Full%20Research%20Paper.pdf">Unpublished Paper</a>
 `;
 
 
