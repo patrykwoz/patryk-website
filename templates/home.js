@@ -99,7 +99,7 @@ ideaLog.innerHTML = `
     <p class="project-card-header-timeline">2023</p>
     <p class="project-card-header-type">Software Engineering</p>
 </div>
-<p class="project-title">IDEALog (WIP)</p>
+<p class="project-title">IdeaLog Project</p>
 <div class="project-image">
     <img src="assets/idealog/idealog.png" alt=""> 
 </div>
@@ -108,7 +108,7 @@ ideaLog.innerHTML = `
 ideaLog.addEventListener('click', function(e){
     const projectCard = e.target;
     if (projectCard) {
-        window.location.href = 'https://github.com/patrykwoz/idealog';
+        window.location.href = 'https://github.com/patrykwoz/idealog-fullstack';
 
         // const contentParam = 'idealog';
         // window.location.href = `https://patrykwozniczka.com/?content=${contentParam}`;
